@@ -1,9 +1,11 @@
-import React from 'react'
+import ChatWindow from "./components/ChatWindow";
+import { ToastContainer } from "react-toastify";
 
-function App() {
+export default function App() {
   return (
-    <div>App</div>
-  )
+    <div className="bg-[#080e17] text-white min-h-screen">
+      <ChatWindow />
+      <ToastContainer />
+    </div>
+  );
 }
-
-export default App
